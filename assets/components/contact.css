@@ -1,0 +1,77 @@
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 2rem;
+    margin-top: -20rem;
+}
+
+.contact-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-subheading {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.3);
+    color: #3498db;
+}
+
+.contact-button span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover span {
+    transform: scale(1.05);
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #2c3e50;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.copyright span {
+    display: inline-block;
+    margin-right: 0.25rem;
+}
