@@ -1,0 +1,35 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 25%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 0% 75%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(-45deg, 
+        #e6f3ff 0%,
+        #f0f9ff 20%,
+        #e1f5fe 40%,
+        #ffffff 50%,
+        #e3f2fd 60%,
+        #e1f5fe 70%,
+        #f0f9ff 80%,
+        #ffffff 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    color: #000000;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
