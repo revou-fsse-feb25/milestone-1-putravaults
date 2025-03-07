@@ -1,4 +1,8 @@
 #projects{
+    padding-top: 2rem;
+}
+
+.project-container{
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -14,7 +18,7 @@
     margin-top: 2rem;
 }
 
-#projects div h1 {
+.project-container div h1 {
     margin-top: -1.5rem;
     font-size: 4rem;
     font-weight: 700;
@@ -25,6 +29,8 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .project-brief {
+    padding-left: 4rem;
+    padding-right: 4rem;
     font-size: 1.2rem;
     text-align: center;
     margin-top: -1.5rem;
@@ -33,26 +39,40 @@
 }
 
 .project-brief p {
-    margin: 0.5rem 0;
     text-align: center;
 }
 
 #projects-cards {
     width: auto;
-    height: 40vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
-    
 }
+#projects-cards div i{
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 4rem;
+}
+#projects-cards div h3{
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .project1, .project2, .project3, .project4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     padding: 2.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     height: 30vh;
@@ -76,8 +96,6 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
-
-
 
 .project2:hover {
     transform: translateY(-5px);
