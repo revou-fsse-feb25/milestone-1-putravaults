@@ -1,13 +1,8 @@
-@import url(/assets/components/typography.css); /*fonts*/
-@import url(/assets/components/home.css); /*home section styling*/
+@import url(./assets/components/typography.css); /*fonts*/
+@import url(./assets/components/home.css); /*home section styling*/
 @import url(/assets/components/aboutme.css); /*about me section styling*/
-@import url(/assets/components/projects.css); /*projects section styling*/
-@import url(/assets/components/contact.css); /*contact section styling*/
-@import url(/assets/components/background.css); /*background styling*/
-@import url(/assets/components/navbar.css); /*navbar styling*/
-@import url(/assets/components/main.css); /*main styling*/
-
-
-#Home, #Aboutme, #Projects, #Contact {
-    /* margin-top: 4rem; */
-}
+@import url(./assets/components/projects.css); /*projects section styling*/
+@import url(./assets/components/contact.css); /*contact section styling*/
+@import url(./assets/components/background.css); /*background styling*/
+@import url(./assets/components/navbar.css); /*navbar styling*/
+@import url(./assets/components/main.css); /*main styling*/
