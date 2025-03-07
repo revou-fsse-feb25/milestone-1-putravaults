@@ -1,32 +1,34 @@
 #Aboutme {
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
+    margin-top: 5rem;
+    padding-top: 2rem;
 }
 
 .profile-container-about {
-    margin: 10rem 1rem 1rem 1rem;
+    /* margin: 5rem 1rem 1rem 1rem; */
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
-    padding: 2.5rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    height: 80vh;
-    width: 30vw;
+    min-height: 60vh;
+    min-width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .profile-container-about img {
-    width: 30vw;
-    height: auto;
+    max-width: auto;
+    max-height: 90vh;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -38,9 +40,13 @@
 }
 
 .about-text {
+    /* display: flex; */
     font-size: 1.2rem;
-    flex: 1;
-    padding: 2rem 3rem 2rem 5rem;
+    /* margin: 12rem 1rem 1rem 1rem; */
+}
+
+.about-text hr {
+    margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 .about-text h1 {
@@ -65,9 +71,97 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+    #Aboutme {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-container-about {
+        margin: 2rem 1rem 1rem 1rem;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .profile-container-about img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 84vw;
+        height: 46vh;
+        object-fit: cover;
+    }
+    .about-text{
+        text-align: justify;
+        font-size: 1rem;
+        margin: 0rem 1rem 1rem 1rem;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text h2 {
+        font-size: 3rem;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    #Aboutme {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .profile-container-about {
+        width: 80vw;
+        height: auto;
+        margin: 3rem 0;
+    }
+
+    .profile-container-about img {
+        width: 70vw;
+    }
+
+    .about-text {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 3rem;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-container-about {
+        width: 90vw;
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .profile-container-about img {
+        width: 85vw;
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+}
+
 .about-text .subtitle {
     font-size: 1.5rem;
     color: #2c3e50;
     margin-top: 1rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
+} */

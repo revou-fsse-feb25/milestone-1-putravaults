@@ -5,8 +5,9 @@
 @import url(/assets/components/contact.css); /*contact section styling*/
 @import url(/assets/components/background.css); /*background styling*/
 @import url(/assets/components/navbar.css); /*navbar styling*/
+@import url(/assets/components/main.css); /*main styling*/
 
 
 #Home, #Aboutme, #Projects, #Contact {
-    padding-top: 4rem;
+    /* margin-top: 4rem; */
 }
