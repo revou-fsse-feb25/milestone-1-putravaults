@@ -1,69 +1,52 @@
 #Home {
-    /* border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px; */
-    /* padding: 2.5rem;
-    margin: 3rem 1rem 1rem 1rem; */
-    /* background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); */
-    height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 2rem; */
-}
+    gap: 5rem;
 
+}
 .profile-container {
-    margin: 4rem 1rem 1rem 1rem;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    height: 80vh;
+    height: 79vh;
     width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
-
 .profile-container h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5rem;
     text-align: center;
-    margin: 0;
     background: linear-gradient(45deg, #2c3e50, #3498db);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.intro-text {
-    flex: 1;
-    padding: 2rem 3rem 2rem 20rem;
+.introduction {
+    display: flex;
+    flex-direction: column;
 }
-
-.intro-text h1 {
+.introduction span {
     font-size: 4rem;
     font-weight: 700;
-    margin: 0;
     background: linear-gradient(45deg, #2c3e50, #3498db);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.intro-text h2 {
+.introduction h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin: 0;
     background: linear-gradient(45deg, #3498db, #2c3e50);
     -webkit-background-clip: text;
     background-clip: text;
@@ -71,7 +54,7 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.intro-text .subtitle {
+.introduction .subtitle {
     font-size: 1.5rem;
     color: #2c3e50;
     margin-top: 1rem;
@@ -79,7 +62,7 @@
 }
 
 /* Keep your existing image styles */
-#Home img {
+#Home .profile-container picture img {
     width: 30vw;
     height: auto;
     border-radius: 10px;
@@ -91,3 +74,54 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
+.home-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-items: left;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(44, 62, 80, 0.3), 0 0 20px rgba(44, 62, 80, 0.2), 0 0 30px rgba(44, 62, 80, 0.1);
+}
+.home-button:hover {
+    color: #1abc9c;
+    text-shadow: 0 0 15px rgba(26, 188, 156, 0.4), 0 0 25px rgba(26, 188, 156, 0.3), 0 0 35px rgba(26, 188, 156, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+    #Home {
+        flex-direction: column;
+        gap: 1rem;
+        }
+    .profile-container {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+    }
+    #Home .profile-container picture img {
+        margin-top: 1rem;
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .profile-container h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+    }
+    .home-button {
+    margin-top: 2rem;
+    }
+    .introduction span {
+
+        display: none;
+    }
+    .introduction h1 {
+        display: none;
+    }
+    }

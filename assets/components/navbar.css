@@ -8,7 +8,7 @@
     padding-bottom: 1rem;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,3 +32,8 @@
     color: #1abc9c;
     text-shadow: 0 0 15px rgba(26, 188, 156, 0.4), 0 0 25px rgba(26, 188, 156, 0.3), 0 0 35px rgba(26, 188, 156, 0.2);
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        
+    }

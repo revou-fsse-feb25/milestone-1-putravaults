@@ -1,22 +1,44 @@
 # Personal Portfolio Website
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/zOa-lK1T)
+## Overview
+A modern, responsive portfolio website showcasing my transition from business administration to software development. The website features a glass-morphism design theme with smooth animations and interactive elements.
 
-## Description
-This is a personal portfolio website showcasing my journey as a web developer. The website features a clean, modern design with sections for home, about me, projects, and contact information.
+[Live Demo](https://revou-fsse-feb25.github.io/milestone-1-putravaults/) | [GitHub Repository](https://github.com/revou-fsse-feb25/milestone-1-putravaults)
 
 ## Features
-- Responsive navigation bar
-- Home section with personal introduction
-- About Me section detailing my background and skills
-- Projects section showcasing current and upcoming work
-- Contact section for professional connections
+- Responsive navigation bar with smooth scroll functionality
+- Glass-morphism design elements throughout the site
+- Dynamic hover effects and transitions
+- Mobile-responsive layout
+- Sections include:
+  - Home: Personal introduction with animated elements
+  - About Me: Professional background and aspirations
+  - Projects: Showcase of current and future work
+  - Contact: Professional connection links
+
+## Styling Features
+- Glass-morphism effects using backdrop-filter
+- Gradient text animations
+- Responsive image handling
+- Custom button animations
+- Smooth transitions and hover effects
+- Mobile-first responsive design
+- Custom scrollbar styling
+- Dynamic navigation bar hiding on scroll
 
 ## Technologies Used
+### Core Technologies
 - HTML5
 - CSS3
-- JavaScript
-- Modern CSS practices including Flexbox/Grid
+- JavaScript (ES6+)
+
+### CSS Features Implemented
+- Flexbox for layouts
+- CSS Grid for project cards
+- CSS Variables for theming
+- Media Queries for responsiveness
+- CSS Animations and Transitions
+- Backdrop-filter for glass effects
 
 ## Project Structure
 ```

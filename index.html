@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Putra's Project Milestone 1</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./index.css">
-    <script src="/assets/components/navbar.js" defer></script>
-    
+    <script src="./assets/components/navbar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body> 
     <header>
-        <nav class="navbar" >
-                <a class="tombol" href="#Home">
-                    Home
-                </a>
-                <a class="tombol" href="#Aboutme">
-                    About me
-                </a>
-                <a class="tombol" href="#Projects">
-                    Projects
-                </a>
-                <a class="tombol" href="#Contact">
-                    Contact
-                </a>
+        <nav>
+            <ul class="navbar">
+                <li><a class="tombol" href="#Home">Home</a></li>
+                <li><a class="tombol" href="#Aboutme">About me</a></li>
+                <li><a class="tombol" href="#projects">Projects</a></li>
+                <li><a class="tombol" href="#Contact">Contact</a></li>
+            </ul>    
         </nav>
     </header>
-    <hr>
     <main>
+        <!-- 1st-section(HOME) -->
         <section id="Home">
             <div class="profile-container">
                 <picture>
@@ -34,13 +29,18 @@
                 </picture>
                 <h1>Hi! Im Putra!</h1>
             </div>
-            <div class="intro-text">
-                <h1>Get To Know</h1>
-                <h2>More About Me!</h2>
-                <p class="subtitle">Scroll Down!</p>
+            <div class="introduction">
+                <span>Get To Know</span>
+                <h1>More About Me!</h1>
+                <button>
+                    <a class="home-button" href="#Aboutme">
+                        Click Me! To Give Me a Handshake.
+                        <i class="fa-solid fa-handshake"></i>
+                    </a>
+                </button>
             </div>
         </section>
-    
+        <!-- 2nd-section(ABOUTME) -->
         <section id="Aboutme">
             <div class="profile-container-about">
                 <picture>
@@ -48,44 +48,49 @@
                 </picture>
             </div>
             <div class="about-text">
-                <h1>About Me</h1>
-                <p>Hi, I'm Putra, a Business Administration graduate with a strong passion for business, economics, and technology. While I've always been drawn to the world of business, my curiosity for software engineering has led me to embark on a new journey—balancing the demands of running my own F&B business in Jakarta while diving deep into coding through a software engineering bootcamp.</p>
-                <p>This transition is driven by my belief that technology and business go hand in hand. Whether it's optimizing operations, enhancing customer experience, or developing innovative solutions, I'm eager to explore how software can shape industries.</p>
-                </picture>
+                <article>
+                    <h1>About Me</h1>
+                    <hr>
+                    <p>Hi, I'm Putra, a Business Administration graduate with a strong passion for business, economics, and technology. While I've always been drawn to the world of business, my curiosity for software engineering has led me to embark on a new journey—balancing the demands of running my own F&B business in Jakarta while diving deep into coding through a software engineering bootcamp.</p>
+                    <p>This transition is driven by my belief that technology and business go hand in hand. Whether it's optimizing operations, enhancing customer experience, or developing innovative solutions, I'm eager to explore how software can shape industries.</p>
+                </article>
+            </div>
         </section>
-        <article>
-            <section id="Project-briefs">
-                <div class="project-title">
-                    <h3>My Projects</h3>
-                </div>
-                <div class="project-brief">
+        <!-- 3rd-section(PROJECTS) -->
+        <section id="projects">
+            <div>
+                <h1>My Projects</h1>
+            </div>
+            <div class="project-brief">
+                <article>
                     <p>I'm currently working on my very first project—this website! As part of my bootcamp's first milestone, I'm learning to build and structure a personal website from scratch.</p>
                     <p>In the coming months, I'll be tackling more complex projects, diving into JavaScript, Next.js, advanced frontend concepts, and database connections, all leading up to a final capstone project that will bring everything together. This space will evolve as I grow, so stay tuned for future updates!</p>
-                </div>
-            </section>
-                <section id="Projects">
-                    <div class="project1">
-                        <h3>Basic Front End</h3>
-                        <p class="project-status">1st project</p>
-                    </div>
-                    <div class="project2">
-                        <h3>JavaScript</h3>
-                        <p class="project-status">upcoming project</p>
-                    </div>
-                    <div class="project3">
-                        <h3>Back-end</h3>
-                        <p class="project-status">upcoming project</p>
-                    </div>
-                    <div class="project4">
-                        <h3>Final Projects</h3>
-                        <p class="project-status">upcoming project</p>
-                    </div>
-                </section>
-            </section>
-        </article>
+                </article>
+            </div>
+        </section>
+        <!-- PROJECT CARDS -->
+        <section id="projects-cards">
+            <div class="project1">
+                <h3>Basic Front End</h3>
+                <p class="project-status">1st project</p>
+            </div>
+            <div class="project2">
+                <h3>JavaScript</h3>
+                <p class="project-status">upcoming project</p>
+            </div>
+            <div class="project3">
+                <h3>Back-end</h3>
+                <p class="project-status">upcoming project</p>
+            </div>
+            <div class="project4">
+                <h3>Final Projects</h3>
+                <p class="project-status">upcoming project</p>
+            </div>
+        </section>
     </main>
     <footer>
-        <section id="Contact" class="contact-section">
+        <!-- 4th-section(CONTACT) -->
+        <section class="contact-section">
             <h2 class="contact-heading">Let's Connect</h2>
             <p class="contact-subheading">Find out my current projects on GitHub</p>
             <div class="contact-links">
@@ -97,11 +102,11 @@
                 </a>
             </div>
         </section>
-    </div>
-    <div class="copyright">
-        <span>©</span> by: Putra 2025
-    </div>
-    </div>
+        </div>
+            <div class="copyright">
+                <span>©</span> by: Putra 2025
+            </div>
+        </div>
     </footer>
 </body>
 </html>
