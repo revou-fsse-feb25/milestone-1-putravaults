@@ -19,6 +19,9 @@
 }
 
 .education-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(10px);
@@ -62,13 +65,16 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .education {
-        gap: 1rem;
+        gap: 2rem;
+        justify-content: space-around;
+        align-items: center;
+
     }
     
     .education-card {
-        width: 100%;
-        max-width: 300px;
+        width: 90vw;
+        /* max-width: 300px; */
     }
 }
