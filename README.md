@@ -15,6 +15,7 @@ A modern, responsive portfolio website showcasing my transition from business ad
   - About Me: Professional background and aspirations
   - Projects: Showcase of current and future work
   - Contact: Professional connection links
+  - Contact Form: E-mail contact form
 
 ## Styling Features
 - Glass-morphism effects using backdrop-filter
@@ -52,6 +53,7 @@ A modern, responsive portfolio website showcasing my transition from business ad
     - navbar.js
     - projects.css
     - typography.css
+    -contact-form.css
   - images/
 - index.css
 - index.html
