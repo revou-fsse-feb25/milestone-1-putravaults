@@ -4,6 +4,10 @@ margin-right: 1rem;
 margin-top: 7rem;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 600px) {
     main{
         margin-left: 1rem;

@@ -42,12 +42,15 @@
         </section>
         <!-- 2nd-section(ABOUTME) -->
         <section id="Aboutme">
+            <!-- PARTISI 1(FOTO) -->
             <div class="profile-container-about">
                 <picture>
                     <img src="assets/images/foto.JPG" alt="Profile Picture">
                 </picture>
             </div>
+            <!-- PARTISI 2(ARTIKEL & EDUKASI) -->
             <div class="about-text">
+                <!-- PARTISI 2-ITEM1 -->
                 <div>
                     <article>
                         <h1>About Me</h1>
@@ -56,10 +59,12 @@
                         <p>This transition is driven by my belief that technology and business go hand in hand. Whether it's optimizing operations, enhancing customer experience, or developing innovative solutions, I'm eager to explore how software can shape industries.</p>
                     </article> 
                 </div>
+                <!-- PARTISI 2-ITEM2 -->
                 <div>
                     <span class="edu-tag">Education</span>
+                    <hr>
                 </div>
-                <hr>
+                <!-- PARTISI 2-ITEM3 -->
                 <div>
                     <ul class="education">
                         <li>
@@ -114,10 +119,10 @@
                 <h3>Front-end</h3>
                 <i class="fa-solid fa-display"></i>
                 <hr>
-                <p class="project-status">1st project (this project)</p>
+                <p class="project-status">1st project (this page)</p>
             </div>
             <div class="project2">
-                <h3>JavaScript</h3>
+                <h3>Java Script</h3>
                 <i class="fa-brands fa-js"></i>
                 <hr>
                 <p class="project-status">upcoming project</p>
@@ -135,21 +140,42 @@
                 <p class="project-status">upcoming project</p>
             </div>
         </section>
-</main>
+    </main>
     <footer>
         <!-- 4th-section(CONTACT) -->
-        <section class="contact-section">
-            <h2 class="contact-heading">Let's Connect!</h2>
-            <p class="contact-subheading">Or find out my current projects on GitHub.</p>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/putra-farhan-abdul-halim-b422a2269" target="_blank" rel="noopener noreferrer" class="contact-button linkedin">
-                    <span>Connect on LinkedIn</span>
-                </a>
-                <a href="https://github.com/revou-fsse-feb25/milestone-1-putravaults" target="_blank" rel="noopener noreferrer" class="contact-button github">
-                    <span>View GitHub Projects</span>
-                </a>
-            </div>
-        </section>
+        <div class="footer-container">
+            <section class="contact-section">
+                <h2 class="contact-heading">Let's Connect!</h2>
+                <p class="contact-subheading">Or find out my current projects on GitHub.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/putra-farhan-abdul-halim-b422a2269" target="_blank" rel="noopener noreferrer" class="contact-button linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/revou-fsse-feb25/milestone-1-putravaults" target="_blank" rel="noopener noreferrer" class="contact-button github">
+                        <i class="fa-brands fa-github"></i>
+                        <span>View GitHub Projects</span>
+                    </a>
+                </div>
+            </section>
+            <section class="contact-form-section">
+                <h2 class="contact-heading">Send Me a Message</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email Address :</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject :</label>
+                        <input type="text" id="subject" name="subject" placeholder="Message Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </section>
         </div>
             <div class="copyright">
                 <span>©</span> by: Putra 2025

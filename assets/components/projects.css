@@ -1,5 +1,5 @@
 #projects{
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .project-container{
@@ -19,7 +19,6 @@
 }
 
 .project-container div h1 {
-    margin-top: -1.5rem;
     font-size: 4rem;
     font-weight: 700;
     background: linear-gradient(45deg, #2c3e50, #3498db);
@@ -33,7 +32,6 @@
     padding-right: 4rem;
     font-size: 1.2rem;
     text-align: center;
-    margin-top: -1.5rem;
     margin-bottom: 1.5rem;
     font-weight: normal;
 }
@@ -75,7 +73,7 @@
     padding: 2.5rem;
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    height: 30vh;
+    height: auto;
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -112,14 +110,59 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
-
+@media screen and (max-width: 1024px) {
+    #projects-cards div h3{
+        font-size: 1.6rem;
+    }
+    .project-brief {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .project-brief p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    #projects-cards div h3{
+        font-size: 1.6rem;
+    }
+    .project-brief {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .project-brief p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
 @media only screen and (max-width: 600px) {
     #projects {
         margin-top: 1rem;
     
     }
+    .project-container div h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    .project-brief {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-weight: normal;
+    }
+    
+    .project-brief p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
     #projects-cards div h3{
         font-size: 1rem;
     }
     
 }
+

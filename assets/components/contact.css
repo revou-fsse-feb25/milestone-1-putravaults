@@ -13,7 +13,7 @@
 }
 
 .contact-heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #2c3e50, #3498db);
@@ -65,8 +65,19 @@
     transform: scale(1.05);
 }
 
+.footer-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
 .copyright {
     margin-top: 2rem;
+    text-align: center;
+    width: 100%;
     font-size: 0.875rem;
     color: #2c3e50;
     opacity: 0.8;
@@ -76,4 +87,25 @@
 .copyright span {
     display: inline-block;
     margin-right: 0.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container{
+        display: flex
+        flex-direction: column;
+    }
+    .contact-section {
+        width: 100%;
+}
+}
+
+@media screen and (max-width: 480px) {
+    .contact-heading {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .contact-subheading {
+        font-size: 1rem;
+
+    }
 }

@@ -1,7 +1,6 @@
 .edu-tag {
     font-size: 3rem;
     font-weight: 700;
-    margin: 0;
     background: linear-gradient(200deg, #6d7f92, #266087);
     -webkit-background-clip: text;
     background-clip: text;
@@ -11,7 +10,6 @@
 .education {
     margin: 2rem auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
     width: 100%;
@@ -28,8 +26,8 @@
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     padding: 1.5rem;
-    width: 250px;
-    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -64,17 +62,37 @@
     font-weight: 500;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-
+@media screen and (max-width: 1444px) {
+    .education-card {
+        min-width: 160px;
+        min-height: 270px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .education-card {
+        min-width: 160px;
+        min-height: 270px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .education-card {
+        min-width: 160px;
+        min-height: 270px;
+    }
+}
 @media screen and (max-width: 600px) {
+    .edu-tag {
+        font-size: 2rem;
+        font-weight: 700;
+    }
     .education {
+        flex-direction: column;
         gap: 2rem;
         justify-content: space-around;
         align-items: center;
-
     }
     
     .education-card {
-        width: 90vw;
-        /* max-width: 300px; */
+        width: 91vw;
     }
 }
